@@ -1,0 +1,18 @@
+
+ #cover {
+    background: #272727;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+ .mat-form-field-underline {
+   background-color:white !important;
+ }
+
+
+/*html, body { height: 100%; }*/
+/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/

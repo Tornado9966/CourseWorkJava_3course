@@ -1,0 +1,12 @@
+<section  class="min-vh-100" id="cover">
+  <div class="col text-center text-white">
+    <h1>Welcome</h1>
+    <div class="container" [hidden]="!authenticated()">
+      <h3>Hello</h3>
+      <h3>We glad to see you</h3>
+    </div>
+    <div [hidden]="authenticated()">
+      <h3>Login to see your greeting</h3>
+    </div>
+  </div>
+</section>

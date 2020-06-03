@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="160d350f-a66b-43fc-b7f9-de600c1e29c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/config/EmailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/config/EmailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/GenericDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/impl/UserInviteDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/persistance/dao/impl/UserInviteDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/rest/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/rest/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/team/app/backend/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/sql_query.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/sql_query.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app.war" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app.war.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/config/SpringJdbcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/config/SpringJdbcConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/persistance/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/persistance/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/persistance/dao/impl/UserInviteDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/persistance/dao/impl/UserInviteDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/com/team/app/backend/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/polyfills-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/resources/styles-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/sql_query.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/classes/sql_query.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/lib/frontend-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/brain-duel-app/WEB-INF/lib/frontend-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/config/SpringJdbcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/config/SpringJdbcConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/persistance/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/persistance/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/persistance/dao/impl/UserInviteDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/persistance/dao/impl/UserInviteDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/team/app/backend/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/polyfills-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/styles-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/styles-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/styles-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/resources/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/resources/styles-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/authorization/authorization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/authorization/authorization.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/entities/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/entities/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/user-card/user-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/user-card/user-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/user-profile/user-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main/web/src/app/user-profile/user-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/web/src/app/user-profile/user-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/polyfills-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/styles-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/styles-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/styles-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/classes/static/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/classes/static/styles-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/target/frontend-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/target/frontend-0.0.1-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bMkmSrDE0Rvuj7hqTkXPGNIpO1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="ts.external.directory.path" value="D:\CourseWork\frontend\src\main\web\node_modules\typescript\lib" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="E2E Tests (ui-app)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/frontend/src/main/web/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application (web)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.team.app.backend.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Server (web)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/src/main/web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="160d350f-a66b-43fc-b7f9-de600c1e29c4" name="Default Changelist" comment="" />
+      <created>1588449508251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588449508251</updated>
+      <workItem from="1588449514137" duration="4175000" />
+      <workItem from="1588664482026" duration="756000" />
+      <workItem from="1588690339260" duration="3745000" />
+      <workItem from="1589140064795" duration="642000" />
+      <workItem from="1589295978508" duration="254000" />
+      <workItem from="1589296368030" duration="2868000" />
+      <workItem from="1589557581404" duration="7198000" />
+      <workItem from="1589900055766" duration="462000" />
+      <workItem from="1590837884038" duration="4085000" />
+      <workItem from="1590858734845" duration="1489000" />
+      <workItem from="1590860658809" duration="4093000" />
+      <workItem from="1590946506202" duration="947000" />
+      <workItem from="1591003898584" duration="3588000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="248" width="462" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589559619629">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="453" y="248" width="462" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1589559619629" />
+    <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589560789642">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589560789642" />
+    <state x="449" y="107" key="FileChooserDialogImpl" timestamp="1588450176563">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="449" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588450176563" />
+    <state x="179" y="0" width="1128" height="728" key="SettingsEditor" timestamp="1588450198351">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="179" y="0" width="1128" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588450198351" />
+    <state x="406" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1591003904360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="406" y="199" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591003904360" />
+  </component>
+</project>

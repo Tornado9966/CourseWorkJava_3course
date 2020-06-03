@@ -1,0 +1,30 @@
+#scroll{
+  overflow-y: auto;
+}
+nav{
+  background: #131111;
+  height: 10%;
+}
+
+a.navbar-brand {
+    color: white;
+    font-size: 20pt;
+}
+
+a.nav-link {
+    color: white;
+    font-size: 15pt;
+}
+
+a.nav-link:hover {
+    color: #00B1C7;
+    text-decoration: underline;
+}
+
+a.navbar-brand:hover {
+    color: white;
+}
+
+li{
+  margin: 20px;
+}

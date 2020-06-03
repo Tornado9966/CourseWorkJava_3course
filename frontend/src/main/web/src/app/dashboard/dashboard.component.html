@@ -1,0 +1,100 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<section   class="min-vh-100" id="cover">
+  <div class="container-fluid text-white">
+    <div class="row mt-2">
+      <nav class="col-md-3 col-lg-3 col-sm-2  d-none d-md-block sidebar navbar-expand-md">
+        <div class="sidebar-sticky">
+          <img  src="https://img.icons8.com/plasticine/100/000000/user-male-circle.png"/>
+          <h5>
+            <span class="badge badge-light">{{getUserName()}} {{getUserLastName()}}</span>
+          </h5>
+          <ul class="nav flex-column">
+            <li *ngIf="getUserRole()==='user' || getUserRole()==='super admin'" class="nav-item border-bottom">
+              <a class="nav-link btn" (click)="profileSet(false, getUser())">
+                <span data-feather="users"></span>
+                <strong>Profile</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+            <li *ngIf="getUserRole()==='user'" class="nav-item border-bottom">
+              <a class="nav-link btn" (click)="changeTab('Friends')">
+                <strong>Friends</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+            <li *ngIf="getUserRole()=='moderator'"  class="nav-item border-bottom">
+              <a class="nav-link btn"  (click)="changeTab('Users')">
+                <strong>Users</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+            <li *ngIf="getUserRole()=='admin'"  class="nav-item border-bottom">
+              <a class="nav-link btn"  (click)="changeTab('Moderators-Users')">
+                <strong>Moderators/Users</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+            <li *ngIf="getUserRole()=='super admin'" class="nav-item border-bottom">
+              <a class="nav-link btn"  (click)="changeTab('Admins-Moderators-Users')">
+                <strong > Admins/Moderators/Users</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link btn" (click)="changeTab('News')">
+                <strong>News</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link btn" (click)="changeTab('AboutUs')">
+                <strong>About us</strong>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-9 px-1 align-self-start" >
+        <div *ngIf="tab === 'Users' || tab === 'Friends' || tab === 'Admins-Moderators-Users' || tab==='Moderators-Users' " class=" main-frame container-fluid my-5 ">
+          <form class="form-inline ml-3 my-2 my-lg-0" >
+            <input #searchBox id="search-box"  class="form-control my-2" type="text" placeholder="Search" style="width: 80%">
+            <button for="search-box" class="btn btn-secondary my-2 my-sm-0" (click)="search(searchBox.value)" type="submit" style="width: auto">Search</button>
+            <button *ngIf="getUserRole()==='admin' || getUserRole()==='super admin'" class="btn btn-success my-2 mx-auto my-sm-0"
+                    (click)="profileSet(true)"  style="width: auto">Add</button>
+          </form>
+          <div>
+            <app-user-card *ngFor="let user of users$ | async" (onChanged)="profileSet(false, $event)" [user]="user"></app-user-card>
+          </div>
+          <div *ngIf="tab === 'Friends'">
+            <app-friends></app-friends>
+          </div>
+        </div>
+        <!--Profile-->
+
+        <app-user-profile *ngIf="tab === 'Profile' || tab === 'AddProfile'" [user]="user" [editOnly]="tab === 'Profile'? false : true" ></app-user-profile>
+        <app-aboutus *ngIf="tab === 'AboutUs'"></app-aboutus>
+        <app-news *ngIf="tab === 'News'"></app-news>
+
+      </main>
+    </div>
+  </div>
+
+</section>

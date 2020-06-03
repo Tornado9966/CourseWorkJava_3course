@@ -1,0 +1,28 @@
+form:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10px;
+}
+h1{
+  color: white;
+  font-weight: bold;
+
+}
+h3{
+  color:white;
+  font-weight: 300;
+}
+
+label.btn {
+  color: white;
+}
+
+.btn:hover{
+  color: #00B1C7;
+}

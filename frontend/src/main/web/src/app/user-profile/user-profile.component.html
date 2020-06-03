@@ -1,0 +1,166 @@
+<section class="min-vh-100" style="margin-top: 100px;">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <div class="container">
+    <div class="row my-2">
+      <div class="col-lg-4 order-lg-1 text-center">
+        <img src="https://img.icons8.com/plasticine/100/000000/user-male-circle.png" width="150" height="150" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+      </div>
+      <div class="col-lg-8 order-lg-2">
+        <ul class="nav nav-tabs">
+          <li *ngIf="!editOnly" class="nav-item">
+            <a  data-target="#profile" data-toggle="tab" class="nav-link active show">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a  data-target="#edit" data-toggle="tab" class="nav-link" [class.active]="editOnly">Edit</a>
+          </li>
+        </ul>
+        <div  class="tab-content py-4">
+          <div *ngIf="!editOnly" class="tab-pane active show" id="profile">
+            <h5 class="mb-3">{{user.role.name | uppercase}} PROFILE</h5>
+            <div class="col">
+              <div class="col-md-6">
+                <h6>{{user.username}}</h6>
+                <p>
+                  {{user.firstName}}, {{user.lastName}}
+                </p>
+                <h6>{{user.email}}</h6>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" [class.active]="editOnly" id="edit">
+            <form [formGroup]="userForm" role="form" (ngSubmit)="submit()">
+              <div class="form-group row">
+                <div class="col-lg-11 ml-lg-3 alert alert-danger" [hidden]="!error">
+                  There was a problem. {{error}}.
+                </div>
+                <div class="col-lg-11 ml-lg-3 alert alert-success" [hidden]="!message">
+                  {{message}}
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                <div class="col-lg-9">
+                  <input class="form-control" formControlName="firstname" type="text" >
+                </div>
+                <div *ngIf="userForm.get('firstname').invalid && userForm.get('firstname').touched" class="validation">
+                  <small *ngIf="userForm.get('firstname').errors.required">
+                    First name cannot be empty
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                <div class="col-lg-9">
+                  <input class="form-control" formControlName="lastname" type="text" required>
+                </div>
+                <div *ngIf="userForm.get('lastname').invalid && userForm.get('lastname').touched" class="validation">
+                  <small *ngIf="userForm.get('lastname').errors.required">
+                    Last name cannot be empty
+                  </small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                <div class="col-lg-9">
+                  <input class="form-control" formControlName="email" type="email" email>
+                </div>
+                <div *ngIf="userForm.get('email').invalid && userForm.get('email').touched" class="validation">
+                  <small *ngIf="userForm.get('email').errors.email">
+                    Please fill in a valid email address
+                  </small>
+                  <small *ngIf="userForm.get('email').errors.required">
+                    Email name cannot be empty
+                  </small>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                <div class="col-lg-9">
+                  <input class="form-control" formControlName="username" type="text" >
+                </div>
+                <div *ngIf="userForm.get('username').invalid && userForm.get('username').touched" class="validation">
+                  <small *ngIf="userForm.get('username').errors.required">
+                    Username name cannot be empty
+                  </small>
+                </div>
+              </div>
+              <div *ngIf="editOnly" class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                <div class="col-lg-9">
+                  <input class="form-control" formControlName="password" type="password" >
+                </div>
+                <div *ngIf="userForm.get('password').invalid && userForm.get('password').touched" class="validation">
+                  <small *ngIf="userForm.get('password').errors.required">
+                    Password cannot be empty
+                  </small>
+                </div>
+              </div>
+              <div *ngIf="editOnly" class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                <div class="col-lg-9">
+                  <input class="form-control" formControlName="confirmPassword" type="password" >
+                </div>
+                <div *ngIf="userForm.get('confirmPassword').invalid && userForm.get('confirmPassword').touched" class="validation">
+                  <small *ngIf="userForm.get('confirmPassword').errors.required">
+                    This field cannot be empty
+                  </small>
+                  <small *ngIf="userForm.get('confirmPassword').errors.mustMatch">
+                    Passwords must match
+                  </small>
+                </div>
+              </div>
+              <div *ngIf="editOnly && userRole()==='super admin'" class="form-group row">
+                <div class="form-check">
+                  <label class="col-lg-7  form-check-label" for="gridRadios1">
+                    Admin
+                    <input class="form-check-input " type="radio" name="role" id="gridRadios1" value="admin" formControlName="role" >
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label col-lg-7" for="gridRadios2">
+                    Moderator
+                    <input class="form-check-input " type="radio" name="role" id="gridRadios2" value="moderator" formControlName="role" >
+                  </label>
+                </div>
+              </div>
+              <div *ngIf="(!editOnly && userRole() !== 'moderator')" class="form-group row">
+                <div class="col">
+                  <div class="row">
+                    <button class="btn btn-warning col-5" (click)="clearPass()" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Set new password
+                    </button>
+                  </div>
+                  <div class="row">
+                    <div class="collapse w-100" id="collapseExample">
+                      <label class="col-md-5 col-lg-5 col-form-label form-control-label">Current password of your {{this.userRole()}} account</label>
+                      <div class="col-lg-7">
+                        <input class="form-control w-100" formControlName="confirmPassword"  type="password" >
+                      </div>
+                      <label class=" col-md-5 col-lg-5 col-form-label form-control-label">New password for this {{user.role.name}} account</label>
+                      <div class="col-md-7 col-lg-7">
+                        <input class="form-control w-100" formControlName="password" type="password" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-12">
+                  <input  *ngIf="(!editOnly && userRole() !== 'moderator')" [disabled]="userForm.invalid" name="button_1" type="submit" class="btn btn-primary" (click)="update()" value="Save Changes">
+                  <input *ngIf="(!editOnly && user.role.name ==='admin' || user.role.name ==='moderator' || user.role.name ==='user') && userRole() !== 'user' && user.status.id == 2" name="button_2"  class="btn btn-danger ml-sm-2" (click)="setStatus(3)" value="Deactivate Account">
+                  <input *ngIf="(!editOnly && user.role.name ==='admin' || user.role.name ==='moderator' || user.role.name ==='user') && userRole() !== 'user' && user.status.id == 3" name="button_2"  class="btn btn-success ml-sm-2" (click)="setStatus(2)" value="Activate Account">
+                  <input *ngIf="!editOnly && userRole() === 'super admin'" name="button_2" type="submit" class="btn btn-danger ml-sm-2 mt-5" (click)="delete()" value="Delete Account">
+                  <input *ngIf="editOnly" [disabled]="userForm.invalid" type="submit" name="button_3" class="btn btn-success mt-lg-3" (click)="add()"  value="Add">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
